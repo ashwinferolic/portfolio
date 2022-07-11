@@ -1,0 +1,257 @@
+import React from "react";
+import styled from "styled-components";
+import Title from "../components/Title";
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px 0px;
+  margin: 50px 0px 0px;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    padding: 0;
+  }
+`;
+
+const Container = styled.div`
+  padding: 20px;
+  margin: 25px auto;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    max-width: 940px;
+    padding: 50px 0px 0px;
+    margin: 40px auto;
+  }
+
+  @media ${(props) => props.theme.mediaQueries.largest} {
+    max-width: 1200px;
+    padding: 50px 0px 75px;
+    margin: 40 auto 0;
+  }
+`;
+
+const SubContainer = styled.div`
+  margin: 60px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+`;
+
+const TextContent = styled.div`
+  max-width: 700px;
+`;
+
+const InstaGridWrapper = styled.div`
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    flex-wrap: nowrap;
+  }
+`;
+
+const InstaLeftWrapper = styled.div`
+  display: flex;
+  flex: 1 1 100%;
+  padding: 0;
+  margin-top: 40px;
+  max-width: 100%;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    flex: 1 1 30%;
+    margin-top: 0;
+    max-width: 200px;
+    margin-right: 200px;
+  }
+`;
+
+const LeftText = styled.div`
+  flex: 1 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  background-position: center center;
+`;
+
+const InstaTitle = styled.h1`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 129.69%;
+  text-align: left;
+  max-width: 90%;
+  letter-spacing: normal;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    max-width: 200px;
+  }
+`;
+
+const InstaRightWrapper = styled.div`
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  padding: 0;
+  display: grid;
+  grid-template:
+    "Left Left centertop Right Right" 1fr
+    "Left Left centerbot Right Right" 1fr / 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    flex: 1 1 70%;
+    gap: 20px;
+  }
+`;
+
+const Left = styled.div`
+  grid-area: Left / Left / Left / Left;
+  height: 220px;
+  background-image: url("./images/str.jpg");
+  background-size: cover;
+  border-radius: 4px;
+  background-position: left center;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    height: 300px;
+  }
+`;
+
+const Top = styled.div`
+  grid-area: centertop / centertop / centertop / centertop;
+  background-image: url("./images/ar.jpg");
+  background-size: cover;
+  border-radius: 4px;
+  height: auto;
+  background-position: right center;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    height: unset;
+  }
+`;
+
+const Bottom = styled.div`
+  grid-area: centerbot / centerbot / centerbot / centerbot;
+  background-image: url("./images/tamasha.jpg");
+  border-radius: 4px;
+  background-size: cover;
+  height: auto;
+  background-position: center top;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    height: unset;
+  }
+`;
+
+const Right = styled.div`
+  grid-area: Right / Right / Right / Right;
+  height: 220px;
+  background-image: url("./images/ani.jpg");
+  border-radius: 4px;
+  background-size: cover;
+  background-position: right top;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    height: 300px;
+  }
+`;
+
+const Footer = styled.div`
+  margin: 100px 0px 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: middle;
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    flex-wrap: nowrap;
+  }
+`;
+
+const Logo = styled.div`
+  position: relative;
+  background-image: url("./images/icon.png");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+`;
+
+const Contact = () => {
+  return (
+    <Wrapper>
+      <Container>
+        <SubContainer>
+          <TextContent>
+            <Title text="Let's Build Something Together" />
+            <p>
+              Feel free to reach out if you're looking for a developer, have a
+              question, or just want to connect.
+            </p>
+            <a href="mailto:ferolic96@gmail.com">
+              <p className="link email"> ferolic96@gmail.com </p>
+            </a>
+          </TextContent>
+        </SubContainer>
+
+        <InstaGridWrapper>
+          <InstaLeftWrapper>
+            <LeftText>
+              <InstaTitle> I'm a lot cooler on instagram </InstaTitle>
+              <a
+                href="https://instagram.com/coldcoffee_cinema"
+                target="_blank"
+                rel="noreferer"
+              >
+                <p className="link">
+                  See More
+                  <span className="ml-10">›</span>
+                </p>
+              </a>
+            </LeftText>
+          </InstaLeftWrapper>
+
+          <InstaRightWrapper>
+            <Left></Left>
+            <Top></Top>
+            <Bottom></Bottom>
+            <Right></Right>
+          </InstaRightWrapper>
+        </InstaGridWrapper>
+      </Container>
+      <Footer>
+        <a href="/">
+          <Logo></Logo>
+        </a>
+        <div>
+          <a href="/" className="social-link">
+            github
+          </a>
+          <a href="/" className="social-link">
+            linkedIn
+          </a>
+          <a href="/" className="social-link">
+            hackerone
+          </a>
+        </div>
+      </Footer>
+    </Wrapper>
+  );
+};
+
+export default Contact;
