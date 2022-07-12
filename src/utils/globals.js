@@ -7,7 +7,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
   }
-
+  
+  html {
+    scroll-behavior: smooth;
+  }
   *, 
   *::after,
   *::before {

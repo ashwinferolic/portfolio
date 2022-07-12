@@ -231,7 +231,7 @@ const Contact = () => {
       </Container>
       {/* Footer */}
       <Footer>
-        <a style={{ textAlign: Left }} href="/">
+        <a style={{ textAlign: Left }} href="#">
           <Logo></Logo>
         </a>
         <div>

@@ -81,7 +81,7 @@ const AboutCol = styled.div`
 const Home = () => {
   return (
     <div>
-      <a href="/">
+      <a href="#">
         <Logo></Logo>
       </a>
       <MarginWrapper>
