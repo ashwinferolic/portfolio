@@ -5,17 +5,13 @@ import Title from "../components/Title";
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 40px 0px 0px;
+  padding: 0;
   margin: 50px 0px 0px;
-
-  @media ${(props) => props.theme.mediaQueries.large} {
-    padding: 0;
-  }
 `;
 
 const Container = styled.div`
   padding: 20px;
-  margin: 25px auto;
+  margin: 0 auto;
 
   @media ${(props) => props.theme.mediaQueries.large} {
     max-width: 940px;
@@ -31,7 +27,7 @@ const Container = styled.div`
 `;
 
 const SubContainer = styled.div`
-  margin: 60px 0px;
+  margin: 40px 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -172,11 +168,10 @@ const Footer = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  vertical-align: middle;
-
+  padding: 10px;
   @media ${(props) => props.theme.mediaQueries.large} {
     flex-wrap: nowrap;
   }
@@ -189,7 +184,7 @@ const Logo = styled.div`
   height: 40px;
   background-repeat: no-repeat;
   background-size: cover;
-  vertical-align: middle;
+  margin-top: 10px;
 `;
 
 const Contact = () => {
@@ -216,7 +211,7 @@ const Contact = () => {
               <a
                 href="https://instagram.com/coldcoffee_cinema"
                 target="_blank"
-                rel="noreferer"
+                rel="noopener noreferrer"
               >
                 <p className="link">
                   See More
@@ -234,18 +229,34 @@ const Contact = () => {
           </InstaRightWrapper>
         </InstaGridWrapper>
       </Container>
+      {/* Footer */}
       <Footer>
-        <a href="/">
+        <a style={{ textAlign: Left }} href="/">
           <Logo></Logo>
         </a>
         <div>
-          <a href="/" className="social-link">
+          <a
+            href="https://github.com/ashwinferolic"
+            target="_blank"
+            className="social-link"
+            rel="noopener noreferrer"
+          >
             github
           </a>
-          <a href="/" className="social-link">
+          <a
+            href="https://www.linkedin.com/in/ferolic/"
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             linkedIn
           </a>
-          <a href="/" className="social-link">
+          <a
+            href="https://hackerone.com/ferolic"
+            target="_blank"
+            className="social-link"
+            rel="noopener noreferrer"
+          >
             hackerone
           </a>
         </div>

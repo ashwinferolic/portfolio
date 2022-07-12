@@ -88,10 +88,18 @@ const Projects = () => {
       <Wrapper>
         <ProjectRow>
           <Project>
-            <a href="/">
+            <a
+              href="https://ashwinferolic.github.io/cinema"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ProjectImage1></ProjectImage1>
             </a>
-            <a href="/">
+            <a
+              href="https://ashwinferolic.github.io/cinema"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Title text="Movie Library" />
             </a>
             <p className="project-desc">
@@ -99,7 +107,11 @@ const Projects = () => {
               api.
             </p>
 
-            <a href="/">
+            <a
+              href="https://ashwinferolic.github.io/cinema"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p className="link"> View Link</p>
             </a>
           </Project>
@@ -107,9 +119,9 @@ const Projects = () => {
         {/* Second Project */}
         <ProjectRow>
           <Project>
-            <a href="/">
+            <div>
               <ProjectImage2></ProjectImage2>
-            </a>
+            </div>
             <a href="/">
               <Title text="Coffee By Benjamin" />
             </a>
@@ -118,7 +130,7 @@ const Projects = () => {
               e-commerce app.
             </p>
 
-            <p> Coming Soon ! </p>
+            <div className="link disabled"> Coming Soon!</div>
           </Project>
         </ProjectRow>
       </Wrapper>

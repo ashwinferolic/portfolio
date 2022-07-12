@@ -5,7 +5,7 @@ const StyledH1 = styled.h1`
   width: 100%;
   font-style: normal;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 30px;
   line-height: 129.69%;
   letter-spacing: 0.03em;
   transform: translateY(30px);

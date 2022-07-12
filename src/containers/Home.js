@@ -97,8 +97,8 @@ const Home = () => {
       <AboutWrapper>
         <AboutCol>
           <p>
-            I'm a self taught web developer , who loves to build products, that
-            delight people.
+            I'm a <strong> self taught </strong> web developer , who loves to
+            build products, that delight people.
             <br />
             <br />
             Programming has always been at the very core of my interests.I love
@@ -113,7 +113,7 @@ const Home = () => {
             <br />
             <br />
             Apart from coding, I love to watch movies with cold coffee in hand
-            and i'm a big fan of Ar Rahman and Mani Ratnam .
+            and i do <strong> bug bounties </strong> as a partime.
           </p>
         </AboutCol>
       </AboutWrapper>

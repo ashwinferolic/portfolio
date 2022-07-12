@@ -83,4 +83,21 @@ export default createGlobalStyle`
       border-bottom: 2px solid black;
     }
   }
+
+  .project-desc {
+    margin: 20px 0px 16px;
+
+    @media (min-width:960px) {
+      max-width: 70%;
+    }
+  }
+
+  .disabled {
+    color : grey;
+    cursor: pointer;
+
+    &:hover {
+      border-color : transparent!important;
+    }
+  }
 `;
