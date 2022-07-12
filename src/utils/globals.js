@@ -85,7 +85,7 @@ export default createGlobalStyle`
   }
 
   .project-desc {
-    margin: 20px 0px 16px;
+    margin: 50px 0px 16px;
 
     @media (min-width:960px) {
       max-width: 70%;

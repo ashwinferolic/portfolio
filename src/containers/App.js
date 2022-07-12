@@ -8,7 +8,7 @@ import Skills from "./Skills";
 const Wrapper = styled.div`
   min-height: 100vh;
   padding: 20px;
-  margin: 25px auto;
+  margin: 25px auto 0 !important;
   opacity: 0;
   animation: 0.6s ease-in-out 0.3s 1 normal forwards running animateText;
 
