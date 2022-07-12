@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   padding: 20px;
-  margin: 0 auto;
+  margin: 0 !important;
 
   @media ${(props) => props.theme.mediaQueries.large} {
     max-width: 940px;
@@ -22,7 +22,7 @@ const Container = styled.div`
   @media ${(props) => props.theme.mediaQueries.largest} {
     max-width: 1200px;
     padding: 50px 0px 75px;
-    margin: 40 auto 0;
+    margin: 40px auto 0;
   }
 `;
 
@@ -164,7 +164,7 @@ const Right = styled.div`
 `;
 
 const Footer = styled.div`
-  margin: 100px 0px 0px;
+  margin: 50px 0px 0px;
   width: 100%;
   height: auto;
   display: flex;
@@ -172,8 +172,10 @@ const Footer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
+
   @media ${(props) => props.theme.mediaQueries.large} {
     flex-wrap: nowrap;
+    margin: 100px 0 0;
   }
 `;
 
